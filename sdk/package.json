@@ -1,0 +1,44 @@
+{
+  "name": "polyflow-sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for Polyflow — machine-payable Polygon RPC for AI agents",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsx watch examples/basic.ts",
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "polygon",
+    "rpc",
+    "x402",
+    "usdc",
+    "ai-agents",
+    "micropayments",
+    "polyflow"
+  ],
+  "author": "Valeo Protocol",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valeo-cash/polyflow-sdk.git"
+  },
+  "peerDependencies": {
+    "viem": "^2.47.0"
+  },
+  "dependencies": {
+    "x402-fetch": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
